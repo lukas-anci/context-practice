@@ -1,0 +1,19 @@
+.App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cart-container {
+  padding: 1em;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+.cart-item {
+  margin: 0.4em 0;
+}
+
+.discount {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-weight: normal;
+}

@@ -1,10 +1,19 @@
-import React from 'react';
-import { CartItem } from './CartItem';
+import React, { useContext } from 'react';
+import CartItem from './CartItem';
 
-export default function Cart() {
+const Cart = (props) => {
   return (
     <div>
-      <CartItem />
+      <h4>Current cart</h4>
+      <div className="cart-container">
+        {props.cartItems.map((item) => (
+          <CartItem item={item} key={item.id} />
+        ))}
+      </div>
+      <br />
+      Discount: XX
     </div>
   );
-}
+};
+
+export default Cart;
